@@ -1,0 +1,676 @@
+<!DOCTYPE html><html lang="id"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RYZARD Game Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head><body><!-- HEADER -->
+<header>
+    <h1>🎮 RYZARD Game Shop</h1>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#games">Games</a>
+        <a href="#about">Tentang</a>
+        <a href="#platform-info">Platform</a>
+        <a href="#how-to">Cara Beli</a>
+        <a href="#contact">Kontak</a>
+    </nav>
+</header>
+
+
+<!-- HOME -->
+<section id="home" class="hero">
+
+    <img src="img game shop\desktop-full-hd-shooter-game-background.jpg" alt="RYZARD Game Shop">
+
+    <div class="hero-content">
+        <h2>RYZARD Game Shop</h2>
+
+        <p>
+            Game Store PC • Mobile • Console • Xbox
+        </p>
+
+        <p>
+            Temukan game favoritmu dan nikmati pengalaman
+            bermain yang seru!
+        </p>
+
+        <a href="#games" class="btn">
+            🎮 Lihat Game
+        </a>
+    </div>
+
+</section>
+
+
+<!-- GAME LIST -->
+<section id="games">
+
+    <h2>🎮 Game List 2026</h2>
+
+    <p class="section-text">
+        Pilih berbagai game berdasarkan genre dan platform
+        yang kamu inginkan.
+    </p>
+
+
+    <!-- FILTER -->
+    <div class="filter">
+
+        <input
+            id="search"
+            type="text"
+            placeholder="🔍 Cari game..."
+        >
+
+        <select id="genre">
+            <option value="all">Semua Genre</option>
+            <option>RPG</option>
+            <option>FPS</option>
+            <option>Racing</option>
+            <option>Sports</option>
+            <option>Adventure</option>
+            <option>MOBA</option>
+            <option>Horror</option>
+        </select>
+
+        <select id="platform">
+            <option value="all">Semua Platform</option>
+            <option>PC</option>
+            <option>Mobile</option>
+            <option>Console</option>
+            <option>Xbox</option>
+        </select>
+
+    </div>
+
+
+    <!-- GAME -->
+    <div class="games">
+
+        <div class="card"
+            data-name="Minecraft"
+            data-genre="Adventure"
+            data-platform="PC Mobile Console">
+
+            <img src="img game shop\Onboarding_Card-A_For-Beginners_600x600.jpg" alt="Minecraft">
+            <h3>🗺️ Minecraft</h3>
+            <p>Adventure • PC / Mobile / Console</p>
+            <b>Rp399.000</b>
+
+            <button onclick="buy('Minecraft')">Beli</button>
+        </div>
+
+
+        <div class="card"
+            data-name="Genshin Impact"
+            data-genre="RPG"
+            data-platform="PC Mobile Console">
+
+            <img src="img game shop\4d4f67a277b41db5d4f78d7827784e80188086ee6c526161.avif" alt="Genshin Impact">
+
+            <h3>⚔️ Genshin Impact</h3>
+            <p>RPG • PC / Mobile / Console</p>
+            <b>Gratis</b>
+
+            <button onclick="buy('Genshin Impact')">Beli</button>
+        </div>
+
+
+        <div class="card"
+            data-name="Valorant"
+            data-genre="FPS"
+            data-platform="PC">
+
+            <img src="img game shop\images valorant.jpg" alt="Valorant">
+
+            <h3>🔫 Valorant</h3>
+            <p>FPS • PC</p>
+            <b>Gratis</b>
+
+            <button onclick="buy('Valorant')">Beli</button>
+        </div>
+
+
+        <div class="card"
+            data-name="Forza Horizon 5"
+            data-genre="Racing"
+            data-platform="PC Xbox">
+
+            <img src="img game shop\images forza horizon.jpg" alt="Forza Horizon 5">
+
+            <h3>🏎️ Forza Horizon 5</h3>
+            <p>Racing • PC / Xbox</p>
+            <b>Rp599.000</b>
+
+            <button onclick="buy('Forza Horizon 5')">Beli</button>
+        </div>
+
+
+        <div class="card"
+            data-name="EA Sports FC 26"
+            data-genre="Sports"
+            data-platform="PC Console Xbox">
+
+            <img src="img game shop\images EA sport FC 26.jpg" alt="EA Sports FC 26">
+
+            <h3>⚽ EA Sports FC 26</h3>
+            <p>Sports • PC / Console / Xbox</p>
+            <b>Rp699.000</b>
+
+            <button onclick="buy('EA Sports FC 26')">Beli</button>
+        </div>
+
+
+        <div class="card"
+            data-name="Mobile Legends"
+            data-genre="MOBA"
+            data-platform="Mobile">
+
+            <img src="img game shop\images mlbb.jpg" alt="Mobile Legends">
+
+            <h3>🎮 Mobile Legends</h3>
+            <p>MOBA • Mobile</p>
+            <b>Gratis</b>
+
+            <button onclick="buy('Mobile Legends')">Beli</button>
+        </div>
+
+
+        <div class="card"
+            data-name="PUBG Mobile"
+            data-genre="FPS"
+            data-platform="Mobile">
+
+            <img src="img game shop\images pubg.jpg" alt="PUBG Mobile">
+
+            <h3>🔫 PUBG Mobile</h3>
+            <p>FPS • Mobile</p>
+            <b>Gratis</b>
+
+            <button onclick="buy('PUBG Mobile')">Beli</button>
+        </div>
+
+
+        <div class="card"
+            data-name="Free Fire"
+            data-genre="FPS"
+            data-platform="Mobile">
+
+            <img src="img game shop\image free fire.jpg" alt="Free Fire">
+
+            <h3>🔥 Free Fire</h3>
+            <p>FPS • Mobile</p>
+            <b>Gratis</b>
+
+            <button onclick="buy('Free Fire')">Beli</button>
+        </div>
+
+
+        <div class="card"
+            data-name="Call of Duty Mobile"
+            data-genre="FPS"
+            data-platform="Mobile">
+
+            <img src="img game shop\Call of duty mobile.jpg" alt="Call of Duty Mobile">
+
+            <h3>🔫 Call of Duty Mobile</h3>
+            <p>FPS • Mobile</p>
+            <b>Gratis</b>
+
+            <button onclick="buy('Call of Duty Mobile')">Beli</button>
+        </div>
+
+
+        <div class="card"
+            data-name="Honkai Star Rail"
+            data-genre="RPG"
+            data-platform="PC Mobile">
+
+            <img src="img game shop\honkai starrail.jpg" alt="Honkai Star Rail">
+
+            <h3>⭐ Honkai Star Rail</h3>
+            <p>RPG • PC / Mobile</p>
+            <b>Gratis</b>
+
+            <button onclick="buy('Honkai Star Rail')">Beli</button>
+        </div>
+
+
+        <div class="card"
+            data-name="Resident Evil 4 Remake"
+            data-genre="Horror"
+            data-platform="PC Console Xbox">
+
+            <img src="img game shop\Resident evil 4 Remake.jpg" alt="Resident Evil 4">
+
+            <h3>👻 Resident Evil 4 Remake</h3>
+            <p>Horror • PC / Console / Xbox</p>
+            <b>Rp549.000</b>
+
+            <button onclick="buy('Resident Evil 4')">Beli</button>
+        </div>
+
+
+        <div class="card"
+            data-name="Elden Ring"
+            data-genre="RPG"
+            data-platform="PC Console Xbox">
+
+            <img src="img game shop\images elden ring.jpg" alt="Elden Ring">
+
+            <h3>⚔️ Elden Ring</h3>
+            <p>RPG • PC / Console / Xbox</p>
+            <b>Rp599.000</b>
+
+            <button onclick="buy('Elden Ring')">Beli</button>
+        </div>
+
+
+        <div class="card"
+            data-name="Need for Speed The Run"
+            data-genre="Racing"
+            data-platform="PC Console Xbox">
+
+            <img src="img game shop\images NFS TR.jpg" alt="Need for Speed The Run">
+
+            <h3>🏎️ Need for Speed The Run</h3>
+            <p>Racing • PC / Console / Xbox</p>
+            <b>Rp499.000</b>
+
+            <button onclick="buy('Need for Speed The Run')">Beli</button>
+        </div>
+
+
+        <div class="card"
+            data-name="GTA V"
+            data-genre="Adventure"
+            data-platform="PC Console Xbox">
+
+            <img src="img game shop\logo-of-the-grand-theft-auto-v-five-free-vector.jpg" alt="GTA V">
+
+            <h3>🚗 GTA V</h3>
+            <p>Adventure • PC / Console / Xbox</p>
+            <b>Rp399.000</b>
+
+            <button onclick="buy('GTA V')">Beli</button>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- TENTANG -->
+<section id="about" class="about">
+
+    <h2>ℹ️ Tentang RYZARD Game Shop</h2>
+
+    <div class="about-content">
+
+        <div>
+            <h3>🎮 Tentang Kami</h3>
+
+            <p>
+                RYZARD Game Shop adalah website toko game
+                yang menyediakan berbagai pilihan game untuk
+                PC, Mobile, Console, dan Xbox.
+            </p>
+
+            <p>
+                Website ini dibuat untuk memudahkan pengguna
+                melihat daftar game, mencari game berdasarkan
+                genre dan platform, serta melakukan pemesanan
+                dengan mudah.
+            </p>
+        </div>
+
+
+        <div>
+            <h3>⭐ Keunggulan RYZARD</h3>
+
+            <ul>
+                <li>🎮 Banyak pilihan game</li>
+                <li>💻 Mendukung berbagai platform</li>
+                <li>🔎 Fitur pencarian game</li>
+                <li>🎯 Filter berdasarkan genre</li>
+                <li>📱 Tampilan responsif untuk HP</li>
+                <li>🛒 Pemesanan game yang mudah</li>
+            </ul>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PLATFORM -->
+<section id="platform-info" class="platform-info">
+
+    <h2>🎮 Platform Game</h2>
+
+    <p class="section-text">
+        Pilih platform sesuai perangkat yang kamu gunakan.
+    </p>
+
+    <div class="platform-box">
+
+        <div>
+            <h3>💻 PC</h3>
+            <p>
+                Nikmati berbagai game PC dengan pilihan
+                genre yang beragam.
+            </p>
+        </div>
+
+        <div>
+            <h3>📱 Mobile</h3>
+            <p>
+                Temukan game mobile populer untuk dimainkan
+                kapan saja.
+            </p>
+        </div>
+
+        <div>
+            <h3>🎮 Console</h3>
+            <p>
+                Berbagai game console tersedia untuk
+                pengalaman bermain yang seru.
+            </p>
+        </div>
+
+        <div>
+            <h3>🟢 Xbox</h3>
+            <p>
+                Pilihan game Xbox untuk para penggemar
+                permainan console.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CARA MEMBELI -->
+<section id="how-to" class="how-to">
+
+    <h2>🛒 Cara Membeli Game</h2>
+
+    <p class="section-text">
+        Ikuti langkah berikut untuk melakukan pemesanan.
+    </p>
+
+    <div class="steps">
+
+        <div>
+            <span>1</span>
+            <h3>Pilih Game</h3>
+            <p>
+                Pilih game yang ingin kamu beli
+                dari daftar game.
+            </p>
+        </div>
+
+        <div>
+            <span>2</span>
+            <h3>Klik Beli</h3>
+            <p>
+                Klik tombol Beli pada game yang
+                kamu pilih.
+            </p>
+        </div>
+
+        <div>
+            <span>3</span>
+            <h3>Isi Data</h3>
+            <p>
+                Masukkan nama, nomor telepon,
+                dan ID game.
+            </p>
+        </div>
+
+        <div>
+            <span>4</span>
+            <h3>Pembayaran</h3>
+            <p>
+                Pilih E-Wallet atau Transfer Bank
+                sebagai metode pembayaran.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- KONTAK -->
+<section id="contact" class="contact">
+
+    <h2>📞 Hubungi RYZARD</h2>
+
+    <p>
+        Jika memiliki pertanyaan mengenai game atau
+        pemesanan, silakan hubungi kami.
+    </p>
+
+    <div class="contact-box">
+
+        <div>
+            <h3>📱 Telepon</h3>
+            <p>085395764332</p>
+        </div>
+
+        <div>
+            <h3>📧 Email</h3>
+            <p>ryzardgameshop@gmail.com</p>
+        </div>
+
+        <div>
+            <h3>📍 Lokasi</h3>
+            <p>Manado, Sulawesi Utara</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+    <h3>🎮 RYZARD Game Shop</h3>
+    <p>Game Store PC • Mobile • Console • Xbox</p>
+    <p>© 2026 RYZARD Game Shop. All Rights Reserved.</p>
+</footer>
+
+
+<!-- MODAL PEMBELIAN -->
+<div id="modal" class="modal">
+
+    <div class="box">
+
+        <button class="close" onclick="closeBuy()">×</button>
+
+        <h2>🛒 Beli Game</h2>
+
+        <p>
+            Game:
+            <b id="gameName"></b>
+        </p>
+
+        <input
+            id="nama"
+            type="text"
+            placeholder="Nama lengkap"
+        >
+
+        <input
+            id="telepon"
+            type="text"
+            placeholder="Nomor telepon"
+        >
+
+        <input
+            id="idgame"
+            type="text"
+            placeholder="Username / ID Game"
+        >
+
+        <select id="bayar" onchange="payment()">
+
+            <option value="">
+                Pilih pembayaran
+            </option>
+
+            <option>E-Wallet</option>
+
+            <option>Transfer Bank</option>
+
+        </select>
+
+        <div id="paymentText"></div>
+
+        <button class="confirm" onclick="confirmBuy()">
+            Konfirmasi Pembelian
+        </button>
+
+    </div>
+</div>
+
+
+<!-- JAVASCRIPT -->
+<script>
+
+    const cards = document.querySelectorAll(".card");
+
+
+    function filterGame() {
+
+        let s = document
+            .getElementById("search")
+            .value
+            .toLowerCase();
+
+        let g = document
+            .getElementById("genre")
+            .value;
+
+        let p = document
+            .getElementById("platform")
+            .value;
+
+
+        cards.forEach(card => {
+
+            let okName =
+                card.dataset.name
+                .toLowerCase()
+                .includes(s);
+
+            let okGenre =
+                g === "all" ||
+                card.dataset.genre === g;
+
+            let okPlatform =
+                p === "all" ||
+                card.dataset.platform.includes(p);
+
+
+            card.style.display =
+                okName && okGenre && okPlatform
+                    ? "block"
+                    : "none";
+
+        });
+    }
+
+
+    document
+        .getElementById("search")
+        .addEventListener("input", filterGame);
+
+    document
+        .getElementById("genre")
+        .addEventListener("change", filterGame);
+
+    document
+        .getElementById("platform")
+        .addEventListener("change", filterGame);
+
+
+    function buy(game) {
+
+        document
+            .getElementById("gameName")
+            .textContent = game;
+
+        document
+            .getElementById("modal")
+            .style.display = "flex";
+    }
+
+
+    function closeBuy() {
+
+        document
+            .getElementById("modal")
+            .style.display = "none";
+    }
+
+
+    function payment() {
+
+        let p =
+            document.getElementById("bayar").value;
+
+        let x =
+            document.getElementById("paymentText");
+
+
+        if (p) {
+
+            x.innerHTML =
+                "<input placeholder='Nomor / detail pembayaran'>";
+
+        } else {
+
+            x.innerHTML = "";
+        }
+    }
+
+
+    function confirmBuy() {
+
+        let nama =
+            document.getElementById("nama").value;
+
+        let telepon =
+            document.getElementById("telepon").value;
+
+
+        if (!nama || !telepon) {
+
+            alert(
+                "Isi nama dan nomor telepon terlebih dahulu!"
+            );
+
+            return;
+        }
+
+
+        alert(
+            "Pesanan berhasil dibuat!\n\n" +
+            "Nama: " + nama + "\n" +
+            "Game: " +
+            document.getElementById("gameName").textContent +
+            "\nTelepon: " + telepon
+        );
+
+
+        closeBuy();
+    }
+
+</script>
+
+</body>
+</html>

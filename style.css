@@ -1,0 +1,564 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: Arial, sans-serif;
+background: #111;
+color: #fff;
+line-height: 1.6;
+}
+
+/* =========================
+HEADER
+========================= */
+
+header {
+background: #080808;
+padding: 18px 5%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 20px;
+position: sticky;
+top: 0;
+z-index: 1000;
+}
+
+header h1 {
+font-size: 24px;
+}
+
+nav {
+display: flex;
+gap: 15px;
+flex-wrap: wrap;
+}
+
+nav a {
+color: #fff;
+text-decoration: none;
+font-weight: bold;
+}
+
+nav a:hover {
+color: #00aaff;
+}
+
+/* =========================
+HOME
+========================= */
+
+.hero {
+position: relative;
+min-height: 520px;
+overflow: hidden;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+.hero img {
+position: absolute;
+width: 100%;
+height: 100%;
+object-fit: cover;
+left: 0;
+top: 0;
+z-index: 0;
+}
+
+.hero::after {
+content: "";
+position: absolute;
+inset: 0;
+background: rgba(0, 0, 0, 0.58);
+z-index: 1;
+}
+
+.hero-content {
+position: relative;
+z-index: 2;
+width: 90%;
+max-width: 800px;
+}
+
+.hero h2 {
+font-size: 46px;
+margin-bottom: 12px;
+}
+
+.hero p {
+font-size: 18px;
+margin-bottom: 10px;
+}
+
+.hero .btn {
+margin-top: 20px;
+}
+
+/* =========================
+BUTTON
+========================= */
+
+.btn {
+display: inline-block;
+background: #008cff;
+color: white;
+text-decoration: none;
+padding: 11px 24px;
+border-radius: 6px;
+font-weight: bold;
+}
+
+.btn:hover {
+background: #006dcc;
+}
+
+/* =========================
+SECTION
+========================= */
+
+section {
+padding: 55px 5%;
+}
+
+section > h2 {
+text-align: center;
+margin-bottom: 12px;
+}
+
+.section-text {
+text-align: center;
+color: #aaa;
+margin-bottom: 30px;
+}
+
+/* =========================
+FILTER
+========================= */
+
+.filter {
+display: flex;
+justify-content: center;
+gap: 10px;
+flex-wrap: wrap;
+margin-bottom: 35px;
+}
+
+.filter input,
+.filter select {
+padding: 12px;
+border: none;
+border-radius: 6px;
+font-size: 14px;
+}
+
+.filter input {
+width: 260px;
+}
+
+/* =========================
+GAME LIST
+========================= */
+
+.games {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 20px;
+}
+
+.card {
+background: #1d1d1d;
+border-radius: 10px;
+overflow: hidden;
+padding-bottom: 15px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+transition: 0.2s;
+}
+
+.card:hover {
+transform: translateY(-5px);
+}
+
+.card img {
+width: 100%;
+height: 180px;
+object-fit: cover;
+display: block;
+}
+
+.card h3,
+.card p,
+.card b {
+display: block;
+margin-left: 15px;
+margin-right: 15px;
+}
+
+.card h3 {
+margin-top: 15px;
+margin-bottom: 5px;
+}
+
+.card p {
+color: #bbb;
+font-size: 14px;
+margin-bottom: 8px;
+}
+
+.card b {
+color: #00bfff;
+margin-bottom: 12px;
+}
+
+.card button {
+margin-left: 15px;
+padding: 9px 20px;
+border: none;
+border-radius: 5px;
+background: #008cff;
+color: white;
+cursor: pointer;
+font-weight: bold;
+}
+
+.card button:hover {
+background: #006dcc;
+}
+
+/* =========================
+TENTANG
+========================= */
+
+.about {
+background: #151515;
+}
+
+.about-content {
+max-width: 1000px;
+margin: 25px auto 0;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 25px;
+}
+
+.about-content > div {
+background: #222;
+padding: 25px;
+border-radius: 10px;
+}
+
+.about-content h3 {
+margin-bottom: 12px;
+}
+
+.about-content p {
+color: #ccc;
+margin-bottom: 12px;
+}
+
+.about-content ul {
+list-style: none;
+color: #ccc;
+}
+
+.about-content li {
+margin: 9px 0;
+}
+
+/* =========================
+PLATFORM
+========================= */
+
+.platform-info {
+background: #111;
+}
+
+.platform-box {
+max-width: 1100px;
+margin: auto;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 20px;
+}
+
+.platform-box div {
+background: #1d1d1d;
+padding: 25px;
+border-radius: 10px;
+text-align: center;
+}
+
+.platform-box h3 {
+margin-bottom: 10px;
+}
+
+.platform-box p {
+color: #bbb;
+}
+
+/* =========================
+CARA MEMBELI
+========================= */
+
+.how-to {
+background: #181818;
+}
+
+.steps {
+max-width: 1100px;
+margin: auto;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 20px;
+}
+
+.steps div {
+background: #222;
+padding: 25px;
+border-radius: 10px;
+text-align: center;
+}
+
+.steps span {
+display: inline-flex;
+width: 42px;
+height: 42px;
+background: #008cff;
+border-radius: 50%;
+align-items: center;
+justify-content: center;
+font-weight: bold;
+margin-bottom: 12px;
+}
+
+.steps h3 {
+margin-bottom: 8px;
+}
+
+.steps p {
+color: #bbb;
+}
+
+/* =========================
+KONTAK
+========================= */
+
+.contact {
+background: #151515;
+text-align: center;
+}
+
+.contact > p {
+color: #bbb;
+margin-bottom: 25px;
+}
+
+.contact-box {
+max-width: 900px;
+margin: auto;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+}
+
+.contact-box div {
+background: #222;
+padding: 25px;
+border-radius: 10px;
+}
+
+.contact-box h3 {
+margin-bottom: 8px;
+}
+
+.contact-box p {
+color: #bbb;
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer {
+text-align: center;
+background: #080808;
+padding: 30px 15px;
+color: #aaa;
+}
+
+footer h3 {
+color: #fff;
+margin-bottom: 8px;
+}
+
+footer p {
+margin: 4px 0;
+}
+
+/* =========================
+MODAL PEMBELIAN
+========================= */
+
+.modal {
+display: none;
+position: fixed;
+inset: 0;
+background: rgba(0, 0, 0, 0.75);
+justify-content: center;
+align-items: center;
+padding: 20px;
+z-index: 2000;
+}
+
+.box {
+width: 100%;
+max-width: 420px;
+background: #222;
+padding: 25px;
+border-radius: 10px;
+position: relative;
+}
+
+.box h2 {
+margin-bottom: 15px;
+}
+
+.box input,
+.box select {
+width: 100%;
+padding: 12px;
+margin-top: 10px;
+border: none;
+border-radius: 5px;
+}
+
+.close {
+position: absolute;
+top: 8px;
+right: 12px;
+background: none;
+border: none;
+color: white;
+font-size: 28px;
+cursor: pointer;
+}
+
+.confirm {
+width: 100%;
+margin-top: 15px;
+padding: 12px;
+border: none;
+border-radius: 5px;
+background: #008cff;
+color: white;
+font-weight: bold;
+cursor: pointer;
+}
+
+.confirm:hover {
+background: #006dcc;
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+
+.games {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.platform-box {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.steps {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+}
+
+@media (max-width: 750px) {
+
+header {
+    flex-direction: column;
+    text-align: center;
+}
+
+.games {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.about-content {
+    grid-template-columns: 1fr;
+}
+
+.contact-box {
+    grid-template-columns: 1fr;
+}
+
+}
+
+@media (max-width: 500px) {
+
+header h1 {
+    font-size: 20px;
+}
+
+nav {
+    justify-content: center;
+    gap: 10px;
+}
+
+nav a {
+    font-size: 14px;
+}
+
+.hero {
+    min-height: 430px;
+}
+
+.hero h2 {
+    font-size: 30px;
+}
+
+.hero p {
+    font-size: 15px;
+}
+
+.games {
+    grid-template-columns: 1fr;
+}
+
+.platform-box {
+    grid-template-columns: 1fr;
+}
+
+.steps {
+    grid-template-columns: 1fr;
+}
+
+.filter {
+    flex-direction: column;
+}
+
+.filter input,
+.filter select {
+    width: 100%;
+}
+
+section {
+    padding: 40px 15px;
+}
+
+}
